@@ -1,0 +1,103 @@
+
+body
+{
+    background-color: #0D0D0D;
+}
+
+.sidebar
+{
+    width: 300px;
+    left: 0;
+    z-index: 9999;
+}
+
+.sidebar a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover
+{
+    color: orangered;
+}
+
+.sidebarLinksUl
+{
+    line-height: 4;
+}
+
+.sidebarFooter
+{
+    bottom: 40px;
+}
+
+.sidebarFooter a
+{
+    margin-right: 15px;
+}
+
+.copyright
+{
+    color: #999999;
+    line-height: 2;
+}
+
+.outSidebar
+{
+    background-color: #F8F6F6;
+}
+
+.logo 
+{
+    width: 40%;
+}
+
+.outSidebarContent
+{
+    height: 90%;
+    /* height: 100%; */
+}
+
+.outSidebarLinks a
+{
+    color: black;
+}
+
+.search input,.contactUs input
+{
+    background-color: inherit;
+}
+
+.search input:focus,.contactUs input:focus
+{
+    border-color: purple;
+    background-color: inherit;
+}
+
+img
+{
+    width: 100%;
+}
+
+.moviesContent:hover .imgLayer
+{
+    top: 0 !important;
+}
+
+.imgLayer
+{
+    transition: 1s all;
+}
+
+@media screen and (max-width : 590px) {
+    .search
+    {
+        margin-left: 60px;
+    }
+}
+
+.nameError
+{
+    /* display: none; */
+}

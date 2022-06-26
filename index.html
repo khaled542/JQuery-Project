@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js exam</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="search mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="colContent mx-5">
+                        <input type="text" placeholder="get movies word..." class="form-control text-center border-0 border-bottom text-white ">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="colContent mx-5">
+                        <input type="text" placeholder="search..." class="searchPage form-control text-center border-0 border-bottom text-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidebar vh-100 bg-black position-fixed top-0 d-flex">
+        <div class="mainSidebar h-100 w-75 d-flex flex-column justify-content-around">
+            <div class="sidebarLinks">
+                <ul class="sidebarLinksUl text-white list-unstyled ms-4 ">
+                    <li><a class="nowPlaying" href="#">Now Playing</a></li>
+                    <li><a class="popular" href="#">Popular</a></li>
+                    <li><a class="rated" href="#">Top Rated</a></li>
+                    <li><a class="trending" href="#">Trending</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sidebarFooter  ms-4">
+                <div class="sidebarFooterSocial text-white">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="outSidebar h-100 w-25">
+            <div class="outSidebarContent d-flex flex-column justify-content-between ">
+                <div class="logo mx-auto mt-5 ">
+                    <img src="images/logo.png" alt="website logo" class="w-100">
+                </div>
+                <div class="sidebarClose text-center">
+                    <i class="x fa-solid fa-grip-lines fa-2x"></i>
+                </div>
+                <div class="outSidebarLinks ">
+                    <div class="global text-center">
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <div class="sett text-center mt-3">
+                        <a href="#"><i class="fa-solid fa-wrench"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="movies mt-5 pt-5">
+        <div class="container">
+            <div class="mv row g-4">
+                <!-- <div class="col-xl-4 col-md-6">
+                    <div class="moviesContent position-relative overflow-hidden">
+                        <img src="images/1.jpg" alt="movie-1" class="">
+                        <div class="imgLayer position-absolute h-100 top-100 start-0 end-0 bg-white bg-opacity-75 text-center">
+                            <h2 class="mt-5 pt-5">Doctor Strange</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Alias necessitatibus iure sed? Praesentium,
+                                  nesciunt. Placeat eveniet, fugiat ipsam reprehenderit
+                                 doloribus porro possimus neque sed aspernatur
+                                  cupiditate laborum reiciendis explicabo temporibus.
+                            </p>
+                            <p>rate:6.8</p>
+                            <p>22-3-2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="moviesContent position-relative overflow-hidden">
+                        <img src="images/2.jpg" alt="movie-1" class="">
+                        <div class="imgLayer position-absolute h-100 top-100 start-0 end-0 bg-white bg-opacity-75 text-center">
+                            <h2 class="mt-5 pt-5">Doctor Strange</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Alias necessitatibus iure sed? Praesentium,
+                                  nesciunt. Placeat eveniet, fugiat ipsam reprehenderit
+                                 doloribus porro possimus neque sed aspernatur
+                                  cupiditate laborum reiciendis explicabo temporibus.
+                            </p>
+                            <p>rate:6.8</p>
+                            <p>22-3-2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="moviesContent position-relative overflow-hidden">
+                        <img src="images/3.jpg" alt="movie-1" class="">
+                        <div class="imgLayer position-absolute h-100 top-100 start-0 end-0 bg-white bg-opacity-75 text-center">
+                            <h2 class="mt-5 pt-5">Doctor Strange</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Alias necessitatibus iure sed? Praesentium,
+                                  nesciunt. Placeat eveniet, fugiat ipsam reprehenderit
+                                 doloribus porro possimus neque sed aspernatur
+                                  cupiditate laborum reiciendis explicabo temporibus.
+                            </p>
+                            <p>rate:6.8</p>
+                            <p>22-3-2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="moviesContent position-relative overflow-hidden">
+                        <img src="images/2.jpg" alt="movie-1" class="">
+                        <div class="imgLayer position-absolute h-100 top-100 start-0 end-0 bg-white bg-opacity-75 text-center">
+                            <h2 class="mt-5 pt-5">Doctor Strange</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Alias necessitatibus iure sed? Praesentium,
+                                  nesciunt. Placeat eveniet, fugiat ipsam reprehenderit
+                                 doloribus porro possimus neque sed aspernatur
+                                  cupiditate laborum reiciendis explicabo temporibus.
+                            </p>
+                            <p>rate:6.8</p>
+                            <p>22-3-2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="moviesContent position-relative overflow-hidden">
+                        <img src="images/3.jpg" alt="movie-1" class="">
+                        <div class="imgLayer position-absolute h-100 top-100 start-0 end-0 bg-white bg-opacity-75 text-center">
+                            <h2 class="mt-5 pt-5">Doctor Strange</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Alias necessitatibus iure sed? Praesentium,
+                                  nesciunt. Placeat eveniet, fugiat ipsam reprehenderit
+                                 doloribus porro possimus neque sed aspernatur
+                                  cupiditate laborum reiciendis explicabo temporibus.
+                            </p>
+                            <p>rate:6.8</p>
+                            <p>22-3-2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="moviesContent position-relative overflow-hidden">
+                        <img src="images/1.jpg" alt="movie-1" class="">
+                        <div class="imgLayer position-absolute h-100 top-100 start-0 end-0 bg-white bg-opacity-75 text-center">
+                            <h2 class="mt-5 pt-5">Doctor Strange</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                 Alias necessitatibus iure sed? Praesentium,
+                                  nesciunt. Placeat eveniet, fugiat ipsam reprehenderit
+                                 doloribus porro possimus neque sed aspernatur
+                                  cupiditate laborum reiciendis explicabo temporibus.
+                            </p>
+                            <p>rate:6.8</p>
+                            <p>22-3-2022</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contactUs mt-5 pt-5" id="contactUs">
+        <div class="container">
+            <h2 class="text-white">Contact Us...</h2>
+            <div class="row gy-3">
+                <div class="col-lg-6">
+                    <div class="colContent">
+                        <input type="text" placeholder="Enter Your Name" class="form-control text-center border-0 border-bottom name text-white">
+                        <p class="nameError d-none bg-info bg-opacity-75 p-3">name is not valis</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="colContent">
+                        <input type="email" placeholder="Enter Email" class="form-control text-center border-0 border-bottom email text-white">
+                        <p class="emailError d-none bg-info bg-opacity-75 p-3">email is not valis</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="colContent">
+                        <input type="tel" placeholder="Enter Phone" class="form-control text-center border-0 border-bottom phone text-white">
+                        <p class="phoneError d-none bg-info bg-opacity-75 p-3">phone number is not valis</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="colContent">
+                        <input type="text" placeholder="Enter Age" class="form-control text-center border-0 border-bottom age text-white">
+                        <p class="ageError d-none bg-info bg-opacity-75 p-3">age is not valis</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="colContent">
+                        <input type="password" placeholder="Enter Password" class="form-control text-center border-0 border-bottom pass text-white">
+                        <p class="passError d-none bg-info bg-opacity-75 p-3">pass is not valid</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="colContent">
+                        <input type="password" placeholder="Re-Enter Password" class="form-control text-center border-0 border-bottom rePass text-white">
+                        <p class="repassError d-none bg-info bg-opacity-75 p-3">passwords not matches</p>
+                    </div>
+                </div>
+            </div>
+            <button  class=" submit btn btn-danger mt-3">submit</button>
+        </div>
+    </section>
+
+    sec
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
