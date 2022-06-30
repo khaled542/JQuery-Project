@@ -90,14 +90,20 @@ img
     transition: 1s all;
 }
 
-@media screen and (max-width : 590px) {
+/* @media screen and (max-width : 590px) {
     .search
     {
         margin-left: 60px;
-    }
+    } */
 }
 
-.nameError
+.search,.movies,.contactUs
 {
-    /* display: none; */
+    width: calc((100%)-600px) !important;
+}
+
+.allSections
+{
+    width:calc(100% - 75px);
+    margin-left: auto;
 }
